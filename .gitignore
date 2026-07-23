@@ -1,0 +1,11 @@
+__pycache__/
+*.ipynb_checkpoints/
+*.egg-info/
+dist/
+upload_lib.txt
+results
+ANFIS-A2C2/tempCodeRunnerFile.py
+ANFIS-A2C2/Dataset/Google2019ClusterSample.csv
+ANFIS-A2C2/Dataset/job_inf_df_Alibaba2026.csv
+ANFIS-A2C2/Dataset/Azure2019 - trace_data_vmtable_vmtable.csv
+ANFIS-A2C2/compararResultado
