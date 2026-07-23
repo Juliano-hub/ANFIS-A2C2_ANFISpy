@@ -528,16 +528,7 @@ if __name__ == "__main__":
     #    'Example11Aggregation', 'Example12Aggregation', 'Overlap', 'Grouping'
 
     deffuz_configs = {
-        #'weighted_sum': lambda: layer5.WeightedSumANFISLayer5(),
-        'quadratic': lambda: layer5.WeightedQuadratic(),
-        #'geometric': lambda: layer5.WeightedGeometric(),
-        #'harmonic': lambda: layer5.WeightedHarmonic(),
-        #'root_power': lambda: layer5.WeightedRootPower(p=3),
-        #'exponential': lambda: layer5.WeightedExponential(alpha=0.05),
-        #'WeightedEuclidean': lambda: layer5.WeightedEuclidean()
-        #'OWAmin': lambda: layer5.OWA(owa_type="min"),
-        #'OWAmax': lambda: layer5.OWA(owa_type="max"),
-        #'OWAmean': lambda: layer5.OWA(owa_type="mean")
+        'weighted_sum': lambda: layer5.WeightedSumANFISLayer5(),
     }
 
     #escala_padrao = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 20.0, 30.0, 40.0, 50.0, 100.0, 150.0, 200.0]
@@ -594,12 +585,12 @@ if __name__ == "__main__":
                     ANFIS_hyperparameters["deffuz_op_name"] = def_name
 
                     folder_name = (
-                        f"def_{ANFIS_hyperparameters['deffuz_op_name']}_"    # Ex: weighted_sum
-                        f"mf_{ANFIS_hyperparameters['mf_type']}{ANFIS_hyperparameters['mf_number']}_"    # Ex: mf_gaussian3 (Número de MFs)
-                        f"ep{ANFIS_hyperparameters['epochs']}_"               # Ex: ep20 (Épocas)
-                        f"f{ANFIS_hyperparameters['number_of_folds']}_"       # Ex: f5 (Folds)
-                        f"b{ANFIS_hyperparameters['batch_size']}_"           # Ex: b32 (Batch Size)
-                        f"s{ANFIS_hyperparameters['SEED']}"               # Ex: seed10
+                        f"def_{ANFIS_hyperparameters['deffuz_op_name']}_"    
+                        f"mf_{ANFIS_hyperparameters['mf_type']}{ANFIS_hyperparameters['mf_number']}_"    
+                        f"ep{ANFIS_hyperparameters['epochs']}_"               
+                        f"f{ANFIS_hyperparameters['number_of_folds']}_"       
+                        f"b{ANFIS_hyperparameters['batch_size']}_"           
+                        f"s{ANFIS_hyperparameters['SEED']}"
                     )
                     ANFIS_hyperparameters["folder_name"] = folder_name
 
